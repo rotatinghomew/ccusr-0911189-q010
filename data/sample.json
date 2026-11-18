@@ -1,0 +1,117 @@
+{
+  "issues": [
+    {
+      "id": "Q1",
+      "eligible": [
+        "a1",
+        "a2",
+        "a3"
+      ]
+    },
+    {
+      "id": "Q2",
+      "eligible": [
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ]
+    }
+  ],
+  "scans": [
+    {
+      "page": "a1",
+      "layout": "竖排",
+      "batch": "s1",
+      "tokens": [
+        "学舍"
+      ]
+    },
+    {
+      "page": "a2",
+      "layout": "竖排",
+      "batch": "s1",
+      "tokens": [
+        "学社"
+      ]
+    },
+    {
+      "page": "b1",
+      "layout": "横排",
+      "batch": "s2",
+      "tokens": [
+        "学社"
+      ]
+    },
+    {
+      "page": "b2",
+      "layout": "横排",
+      "batch": "s2",
+      "tokens": [
+        "学社"
+      ]
+    },
+    {
+      "page": "b4",
+      "layout": "横排",
+      "batch": "s2",
+      "tokens": [
+        "社区"
+      ]
+    }
+  ],
+  "glossaries": {
+    "old": {
+      "community-school": [
+        "学社"
+      ]
+    },
+    "new": {
+      "community-school": [
+        "学社",
+        "学舍"
+      ]
+    }
+  },
+  "edition": "old",
+  "topic": "community-school",
+  "checks": [
+    {
+      "page": "a1",
+      "version": "old",
+      "kind": "targeted",
+      "mentions": true,
+      "probability": null
+    },
+    {
+      "page": "b1",
+      "version": "old",
+      "kind": "random",
+      "mentions": true,
+      "probability": 0.5
+    },
+    {
+      "page": "b2",
+      "version": "new",
+      "kind": "random",
+      "mentions": false,
+      "probability": 0.5
+    }
+  ],
+  "annotations": [
+    {
+      "max_pages": 2,
+      "quarter": "Q2"
+    }
+  ],
+  "archive": [
+    {
+      "report": "R17",
+      "quarters": [
+        "Q1",
+        "Q2"
+      ],
+      "edition": "old"
+    }
+  ]
+}
